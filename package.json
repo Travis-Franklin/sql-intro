@@ -1,0 +1,24 @@
+{
+  "name": "sql-intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "db:delete": "dropdb albums-browser",
+    "db:create": "createdb albums-browser",
+    "db:schema": "psql -f schema.sql albums-browser",
+    "db:seed": "psql -f seed.sql albums-browser",
+    "db:reset": "npm run db:delete && npm run db:create && npm run db:schema && npm run db:seed",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Travis-Franklin/sql-intro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Travis-Franklin/sql-intro/issues"
+  },
+  "homepage": "https://github.com/Travis-Franklin/sql-intro#readme"
+}
